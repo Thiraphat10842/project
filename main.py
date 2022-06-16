@@ -1,6 +1,5 @@
 import uvicorn
 from fastapi import FastAPI
-from typing import Optional
 from action import Action
 
 
@@ -17,9 +16,9 @@ async def hw_update_status_hw(ID, status):
     data = Action.updateStatusHW(ID, status)
     return data
 
-@app.get("/hw/update_status_hw")
-async def hw_update_status_hw(ID, status):
-    data = Action.updateStatusHW(ID, status)
+@app.get("/hw/update_value_hw")
+async def hw_update_value_hw(ID, value):
+    data = Action.updateValueHW(ID, value)
     return data
 
 @app.get("/delete_hw")

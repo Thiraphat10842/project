@@ -17,10 +17,10 @@ class Action:
             data = {"error": True}
         return data
      
-     def updateStatusHW(ID, value):
-        t = Con.updateStatusHW(ID, value)
+     def updateValueHW(ID, value):
+        t = Con.updateValueHW(ID, value)
         if( t == True):
-            data = Con.updateStatusHW(ID)
+            data = Con.updateValueHW(ID)
         else:
             data = {"error": True}
         return data
