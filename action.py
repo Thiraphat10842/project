@@ -18,9 +18,9 @@ class Action:
         return data
      
      def updateValueHW(ID, value):
-        t = Con.updateValueHW(ID, value)
-        if( t == True):
-            data = Con.updateValueHW(ID)
+        boolean = Con.updateValueHW(ID, value)
+        if boolean:
+            data = Con.getHWByID(ID)
         else:
             data = {"error": True}
         return data

@@ -17,7 +17,7 @@ async def hw_update_status_hw(ID, status):
     return data
 
 @app.get("/hw/update_value_hw")
-async def hw_update_value_hw(ID, value):
+async def hw_update_status_hw(ID, value):
     data = Action.updateValueHW(ID, value)
     return data
 
