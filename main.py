@@ -29,4 +29,4 @@ async def DeleteHW(ID):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="192.168.45.190", port=80)
+    uvicorn.run(app, host="192.168.90.190", port=80)
